@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         metadata-complete="false" version="3.0">
+
+    <!-- ServletContext 配置参数 -->
+    <context-param>
+        <param-name>application.name</param-name>
+        <param-value>servlet-web</param-value>
+    </context-param>
+
+    <resource-ref>
+        <description>
+            Resource reference to a factory for java.sql.Connection
+            instances that may be used for talking to a particular
+            database that is configured in the (Context)
+            configuration for the web application.
+        </description>
+        <res-ref-name>jdbc/EmployeeDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+</web-app>
