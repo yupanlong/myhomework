@@ -1,0 +1,29 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>common</short-name>
+    <tag>
+        <name>CommonResponseHeadersTag</name>
+        <tag-class>org.geektimes.projects.servlet.customtag.CommonResponseHeadersTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>cacheControl</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>pragma</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>expires</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.Long</type>
+        </attribute>
+    </tag>
+</taglib>
