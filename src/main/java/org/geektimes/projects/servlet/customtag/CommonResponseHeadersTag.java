@@ -20,7 +20,7 @@ public class CommonResponseHeadersTag extends SimpleTagSupport {
     private String pragma;
     private Long expires;
 
-    public void setMessage(String cacheControl) {
+    public void setCacheControl(String cacheControl) {
         this.cacheControl = cacheControl;
     }
     public void setPragma(String pragma) {
